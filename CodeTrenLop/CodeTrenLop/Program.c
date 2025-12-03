@@ -3,6 +3,35 @@
 
 #include <stdio.h>
 
+void demoMang2chieu()
+{
+    int array[2][3]; // Added missing semicolon here
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            scanf_s("%d", &array[i][j]);
+        }
+	}
+}
+void demoString()
+{
+	//string
+    char name[10] = "Anh"; // { 'A', 'n', 'h', '\0' }
+    //get(name); > fgets()
+    for (int i = 0; i < 3; i++)
+    {
+        scanf_s(" %c ", name[i]);
+	}
+
+    //xuat du lieu = for + printf
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%c", name[i]);
+    }
+	printf("\n");
+    //puts(name);
+}
 int main()
 {
     printf("Hi there!\n");
